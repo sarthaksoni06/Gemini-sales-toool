@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">StackTool <span style="font-size:0.8rem; opacity:0.7;">| CLIENT PORTAL</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Back to Home</a></li>
+            <li><button id="logout-btn" style="background:#ef4444; color:white;">Logout</button></li>
+        </ul>
+    </nav>
+
+    <div class="portal-container">
+        <div class="dashboard-header">
+            <h1 id="user-info">Loading User Data...</h1>
+            <button onclick="alert('This would open a data creation modal')">New Project +</button>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>Active Project A</h3>
+                <p>Status: <span style="color:#4ade80">Running</span></p>
+                <p>Backend: Firebase Connected</p>
+            </div>
+            <div class="card">
+                <h3>Analytics View</h3>
+                <p>Users: 1,204</p>
+                <p>Growth: +12%</p>
+            </div>
+            <div class="card">
+                <h3>Settings</h3>
+                <p>Manage your API keys and profile configuration here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
