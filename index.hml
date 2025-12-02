@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Parallax Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">StackTool</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><button id="login-btn">Client Portal Login</button></li>
+        </ul>
+    </nav>
+
+    <div class="parallax-wrapper">
+        <header id="home">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" class="background-layer" alt="Space Background">
+            <div class="hero-content">
+                <h1>Welcome to the Future</h1>
+                <p>A Full Stack Implementation with Firebase & Parallax</p>
+            </div>
+        </header>
+
+        <section id="features" class="content-section">
+            <h2 style="text-align:center; margin-bottom:40px;">System Features</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Frontend</h3>
+                    <p>Built with Vanilla HTML/JS for maximum speed and zero build-step latency.</p>
+                </div>
+                <div class="card">
+                    <h3>Backend</h3>
+                    <p>Powered by Firebase Firestore and Authentication for real-time data sync.</p>
+                </div>
+                <div class="card">
+                    <h3>Parallax</h3>
+                    <p>Smooth depth effects using CSS 3D transforms and perspective.</p>
+                </div>
+            </div>
+        </section>
+        
+        <header style="height: 60vh;">
+             <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop" class="background-layer" alt="Mountains">
+             <div class="hero-content">
+                 <h2>Seamless Integration</h2>
+             </div>
+        </header>
+
+        <section class="content-section" style="text-align:center;">
+            <p>Ready to manage your data?</p>
+        </section>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
